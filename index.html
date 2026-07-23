@@ -1,20 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nimbus Cloud — VPS, VPC, Kubernetes & CDN</title>
-  <meta
-    name="description"
-    content="Nimbus Cloud provides on-demand VPS, private VPC networking, managed Kubernetes as a Service, and a global CDN — built for engineers who ship."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/cloudsite/assets/index-DBNZNrL4.js"></script>
-  <link rel="stylesheet" crossorigin href="/cloudsite/assets/index-Ba9krE-V.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:#fff;
+    overflow:hidden;
+}
+
+.container{
+    text-align:center;
+    padding:40px;
+}
+
+.logo{
+    font-size:3rem;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.tagline{
+    margin-top:10px;
+    font-size:1.2rem;
+    color:#cbd5e1;
+}
+
+h2{
+    margin-top:40px;
+    font-size:2rem;
+}
+
+p{
+    margin-top:15px;
+    color:#dbeafe;
+    font-size:1rem;
+}
+
+.dots{
+    margin-top:25px;
+    font-size:40px;
+    letter-spacing:8px;
+}
+
+.dot{
+    animation:bounce 1.4s infinite;
+    display:inline-block;
+}
+
+.dot:nth-child(2){
+    animation-delay:.2s;
+}
+
+.dot:nth-child(3){
+    animation-delay:.4s;
+}
+
+@keyframes bounce{
+    0%,80%,100%{
+        transform:translateY(0);
+        opacity:.4;
+    }
+    40%{
+        transform:translateY(-12px);
+        opacity:1;
+    }
+}
+
+.footer{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+    color:#cbd5e1;
+    font-size:14px;
+}
+</style>
 </head>
+
 <body>
-  <div id="app"></div>
+
+<div class="container">
+
+    <div class="logo">YOUR COMPANY</div>
+
+    <div class="tagline">
+        Smarter Cloud. Instant Support
+    </div>
+
+    <h2>Coming Soon</h2>
+
+    <p>We're building something amazing.<br>
+    Stay tuned!</p>
+
+    <div class="dots">
+        <span class="dot">•</span>
+        <span class="dot">•</span>
+        <span class="dot">•</span>
+    </div>
+
+</div>
+
+<div class="footer">
+    © <span id="year"></span> All Rights Reserved.
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
